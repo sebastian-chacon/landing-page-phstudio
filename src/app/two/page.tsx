@@ -112,7 +112,7 @@ export default function PhotographyPortfolio() {
       </header>
 
       <main id="portfolio" className="flex-1 p-3 md:p-6 max-w-[1700px] w-full mx-auto flex items-center">
-        <div className="grid grid-cols-2 md:grid-cols-4 auto-rows-[minmax(130px,_1fr)] gap-3 w-full h-[calc(100vh-100px)] max-h-[880px]">
+        <div className="grid grid-cols-2 md:grid-cols-4 auto-rows-[minmax(130px,1fr)] gap-3 w-full h-[calc(100vh-100px)] max-h-220">
           {galleryProjects.map((item) => (
             <a
               key={item.id}
@@ -147,7 +147,7 @@ export default function PhotographyPortfolio() {
       <section id="about" className="pb-28 px-6 md:px-12 max-w-5xl mx-auto border-t border-gray-200/60 mt-12">
         <h1 className="text-3xl uppercase text-center tracking-[0.3em] text-gray-400 block my-10"> About Me</h1>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-          <div className="relative h-[400px] rounded-sm overflow-hidden bg-gray-200">
+          <div className="relative h-100 rounded-sm overflow-hidden bg-gray-200">
             <Image
               src="https://images.unsplash.com/photo-1542038784456-1ea8e935640e?q=80&w=1000&auto=format&fit=crop"
               alt="Fotógrafo en estudio"
