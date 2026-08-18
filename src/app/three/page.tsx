@@ -234,7 +234,7 @@ export default function HorizontalGridScrollPortfolio() {
           {galleryColumns.map((column, colIndex) => (
             <div
               key={colIndex}
-              className="grid grid-cols-2 grid-rows-3 gap-4 w-[520px] md:w-[600px] h-[620px] shrink-0">
+              className="grid grid-cols-2 grid-rows-3 gap-4 w-130 md:w-150 h-155 shrink-0">
               {column.map((item) => (
                 <a
                   key={item.id}
@@ -283,7 +283,7 @@ export default function HorizontalGridScrollPortfolio() {
           About Me
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-          <div className="relative h-[400px] rounded-sm overflow-hidden bg-gray-200">
+          <div className="relative h-100 rounded-sm overflow-hidden bg-gray-200">
             <Image
               src="https://images.unsplash.com/photo-1542038784456-1ea8e935640e?q=80&w=1000&auto=format&fit=crop"
               alt="Fotógrafo en estudio"
