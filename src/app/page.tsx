@@ -250,7 +250,7 @@ export default function LandingPage() {
       {/* 4. SECCIÓN "SOBRE MÍ" */}
       <section id="bio" className="py-24 bg-white border-y border-gray-200/60">
         <div className="max-w-6xl mx-auto px-6 md:px-12 grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
-          <div className="relative h-[550px] bg-gray-100 shadow-sm">
+          <div className="relative h-137.5 bg-gray-100 shadow-sm">
             <Image
               src="https://images.unsplash.com/photo-1531384698654-7f6e477ca221?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
               alt="Fotógrafo profesional"
@@ -388,7 +388,7 @@ export default function LandingPage() {
             <span className="text-5xl font-serif text-gray-300 block mb-4">
               “
             </span>
-            <p className="text-gray-700 font-serif text-lg md:text-xl italic leading-relaxed mb-8 max-w-2xl mx-auto min-h-[110px]">
+            <p className="text-gray-700 font-serif text-lg md:text-xl italic leading-relaxed mb-8 max-w-2xl mx-auto min-h-27.5">
               &quot;{testimonials[activeTestimonial].quote}&quot;
             </p>
             <div>
