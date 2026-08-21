@@ -17,11 +17,11 @@ interface TemplateOption {
 const templates: TemplateOption[] = [
   {
     id: "1",
-    title: "Editorial Mosaic (Fit Screen)",
-    description: "Diseño clásico de estudio de fotografía con una grilla asimétrica tipo mosaico optimizada para una sola vista de pantalla.",
+    title: "Cámara 3D e Experiencia Inmersiva",
+    description: "Experiencia visual interactiva desarrollada con React Three Fiber, donde una cámara 3D rota y se enfoca dinámicamente según el scroll del usuario.",
     badge: "Opción 1",
-    href: "/one",
-    previewSrc: "/opcion1.png",
+    href: "/four",
+    previewSrc: "/opcion4.png",
   },
   {
     id: "2",
@@ -38,6 +38,14 @@ const templates: TemplateOption[] = [
     badge: "Opción 3",
     href: "/three",
     previewSrc: "/opcion3.png",
+  },
+  {
+    id: "4",
+    title: "Editorial Mosaic (Fit Screen)",
+    description: "Diseño clásico de estudio de fotografía con una grilla asimétrica tipo mosaico optimizada para una sola vista de pantalla.",
+    badge: "Opción 4",
+    href: "/one",
+    previewSrc: "/opcion1.png",
   },
 ];
 
