@@ -17,11 +17,11 @@ interface TemplateOption {
 const templates: TemplateOption[] = [
   {
     id: "1",
-    title: "Cámara 3D e Experiencia Inmersiva",
-    description: "Experiencia visual interactiva desarrollada con React Three Fiber, donde una cámara 3D rota y se enfoca dinámicamente según el scroll del usuario.",
+    title: "Editorial Mosaic (Fit Screen)",
+    description: "Diseño clásico de estudio de fotografía con una grilla asimétrica tipo mosaico optimizada para una sola vista de pantalla.",
     badge: "Opción 1",
-    href: "/four",
-    previewSrc: "/opcion4.png",
+    href: "/one",
+    previewSrc: "/opcion1.png",
   },
   {
     id: "2",
@@ -41,11 +41,19 @@ const templates: TemplateOption[] = [
   },
   {
     id: "4",
-    title: "Editorial Mosaic (Fit Screen)",
-    description: "Diseño clásico de estudio de fotografía con una grilla asimétrica tipo mosaico optimizada para una sola vista de pantalla.",
+    title: "Cámara 3D e Experiencia Inmersiva",
+    description: "Experiencia visual interactiva desarrollada con React Three Fiber, donde una cámara 3D rota y se enfoca dinámicamente según el scroll del usuario.",
     badge: "Opción 4",
-    href: "/one",
-    previewSrc: "/opcion1.png",
+    href: "/four",
+    previewSrc: "/opcion4.png",
+  },
+  {
+    id: "5",
+    title: "Client-Acquisition Portfolio",
+    description: "Diseño optimizado para captación de clientes con secciones clave, integración directa de WhatsApp y mapa de ubicación interactivo.",
+    badge: "Opción 5",
+    href: "/five",
+    previewSrc: "/opcion5.png",
   },
 ];
 
@@ -75,7 +83,7 @@ export default function TemplateSelector() {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {templates.map((tpl) => (
+          {templates.slice().reverse().map((tpl) => (
             <Link
               key={tpl.id}
               href={tpl.href}
