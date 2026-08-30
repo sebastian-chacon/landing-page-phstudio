@@ -1,9 +1,5 @@
-// app/page.tsx
-"use client";
-
 import Image from "next/image";
 import { ArrowUpRight, Mail } from "lucide-react";
-import { useState } from "react";
 
 interface GalleryItem {
   id: number;
@@ -81,7 +77,6 @@ const galleryProjects: GalleryItem[] = [
 
 export default function PhotographyPortfolio() {
   const whatsappNumber = "5491100000000";
-  const [activeFilter, setActiveFilter] = useState("Todos");
 
   return (
     <div className="min-h-screen min-w-[320px] bg-[#F9F9F9] text-[#111111] font-sans selection:bg-black selection:text-white overflow-x-hidden">
