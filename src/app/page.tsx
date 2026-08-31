@@ -1,6 +1,3 @@
-// app/page.tsx
-"use client";
-
 import Link from "next/link";
 import Image from "next/image";
 import { ArrowUpRight } from "lucide-react";
@@ -55,6 +52,14 @@ const templates: TemplateOption[] = [
     href: "/five",
     previewSrc: "/opcion5.png",
   },
+  {
+    id: "6",
+    title: "Client-Acquisition Portfolio",
+    description: "Diseño optimizado para captación de clientes con secciones clave, integración directa de WhatsApp y mapa de ubicación interactivo.",
+    badge: "Opción 6",
+    href: "/six",
+    previewSrc: "/opcion6.png",
+  },
 ];
 
 export default function TemplateSelector() {
@@ -90,12 +95,12 @@ export default function TemplateSelector() {
               className="group relative bg-white border border-gray-200/80 rounded-sm overflow-hidden shadow-sm hover:shadow-md transition-all flex flex-col justify-between"
             >
               {/* PREVIEW IMAGE CONTAINER */}
-              <div className="relative w-full h-48 bg-gray-100 overflow-hidden border-b border-gray-100">
+              <div className="relative w-full h-58 bg-gray-100 overflow-hidden border-b border-gray-100">
                 <Image
                   src={tpl.previewSrc}
                   alt={tpl.title}
                   fill
-                  className="object-cover transition-transform duration-700 group-hover:scale-105 filter grayscale group-hover:grayscale-0"
+                  className="object-cover "
                 />
                 <div className="absolute top-3 left-3">
                   <span className="text-[9px] tracking-widest uppercase bg-black/80 backdrop-blur-md text-white px-2.5 py-1 rounded-full">
@@ -103,7 +108,6 @@ export default function TemplateSelector() {
                   </span>
                 </div>
               </div>
-
               {/* TEXT & INFO CONTAINER */}
               <div className="p-6 flex flex-col justify-between flex-1">
                 <div>
